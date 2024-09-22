@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人頁面</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .fade-in {
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="w-full h-full">
+      <!-- 側邊攔 -->
+      <div class="fixed top-0 left-0 h-full w-60 bg-gray-200 p-5 shadow-lg">
+        <div class="flex flex-col items-center p-3">
+          <div class="w-20 h-fit">
+            <img
+              src="photo.jpg"
+              alt="個人照片"
+              class="rounded-full w-full h-auto border border-gray-300"
+            />
+          </div>
+          <h1 class="text-lg text-center mt-5 font-bold">內心凋零的小男孩</h1>
+
+          <!-- social media -->
+          <div class="mt-5 flex justify-center gap-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=100017724965574"
+              target="_blank"
+              class="text-black hover:text-gray-600"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/abawang__/"
+              target="_blank"
+              class="text-black hover:text-gray-600"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://github.com/frank931023"
+              target="_blank"
+              class="text-black hover:text-gray-600"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <!-- link -->
+        <div class="relative top-5 left-3">
+          <ul class="flex flex-col gap-8">
+            <li class="">
+              <a href="#home" class="text-black hover:text-gray-600">
+                <i class="fas fa-home mr-2"></i>Home
+              </a>
+            </li>
+            <li class="">
+              <a href="#about" class="text-black hover:text-gray-600"
+                ><i class="fas fa-user mr-2"></i> About</a
+              >
+            </li>
+            <li class="">
+              <a href="#contact" class="text-black hover:text-gray-600"
+                ><i class="fas fa-phone mr-2"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 內容區域 -->
+      <div class="relative ml-60">
+        <div
+          id="home"
+          class="container mx-auto p-5 bg-cover bg-center h-screen bg-[url('bg.jpg')]"
+        >
+          <div
+            class="flex flex-col items-center justify-center h-full text-white fade-in"
+          >
+            <h1 class="text-5xl font-bold mb-4">內心凋零的小男孩</h1>
+            <p class="text-2xl">我有一隻小毛驢，我從來也不騎</p>
+          </div>
+        </div>
+
+        <div id="about" class="container mx-auto p-5">
+          <h2 class="text-2xl font-bold mb-5">About</h2>
+
+          <p class="mb-5 text-md ml-20">
+            我是一個<strong>內心凋零的</strong>小男孩，喜歡寫程式，喜歡寫程式，喜歡寫程式，重要的事情說三次。<br />
+            我也喜歡學習新技術，並且熱衷於分享我的知識。
+          </p>
+
+          <div class="w-full flex flex-row justify-evenly">
+            <table class="w-1/4 bg-white shadow-md rounded-lg overflow-hidden">
+              <thead class="bg-gray-200">
+                <tr>
+                  <th class="py-2 px-4">項目</th>
+                  <th class="py-2 px-4">內容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-4 border text-center">年齡</td>
+                  <td class="px-4 border text-center">20</td>
+                </tr>
+                <tr>
+                  <td class="px-4 border text-center">經歷</td>
+                  <td class="px-4 border text-center">GDSC member</td>
+                </tr>
+                <tr>
+                  <td class="px-4 border text-center">愛好</td>
+                  <td class="px-4 border text-center">閱讀, 旅行, 攝影</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/mwSq9dhpn8Y?si=R1SFtiNWfjh6Bo3M"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div id="contact" class="container mx-auto p-5">
+          <h2 class="text-2xl font-bold mb-5">Contact</h2>
+          <div class="flex flex-row justify-center mb-4">
+            <div class="w-1/2 bg-white shadow-md rounded-lg p-6 mr-5">
+              <h2 class="text-xl font-bold mb-4">聯絡我</h2>
+              <p class="text-gray-700 text-sm">
+                如果你有任何問題，歡迎與我聯絡，我會盡快回覆你的訊息。
+              </p>
+              <hr class="my-4" />
+              <p class="text-gray-700 text-sm">
+                你也可以透過以下方式與我聯絡：
+              </p>
+              <ul class="list-disc list-inside text-gray-700 text-sm">
+                <li>
+                  電子郵件：
+                  <a href="mailto:example@gmail.com" class="text-blue-500"
+                    >example@gmail.com</a
+                  >
+                </li>
+                <li>電話：+123456789</li>
+                <li>地址：1234 Example St, City, Country</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
