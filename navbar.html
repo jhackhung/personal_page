@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <header>
+      <!-- Navbar -->
+      <nav class="fixed top-0 left-0 h-full w-[16%] p-5 bg-gray-200 shadow-lg">
+        <div class="relative flex flex-col gap-10">
+          <!-- Photo, name,  and social media -->
+          <div class="mt-8 w-full flex flex-col gap-4 items-center">
+            <img src="./photo.jpg" alt="" class="rounded-full w-20 h-auto" />
+            <h2 class="font-bold text-xl">內心凋零的小男孩</h2>
+            <ul class="flex flex-row gap-4">
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="text-black hover:text-gray-600"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  class="text-black hover:text-gray-600"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.github.com/"
+                  class="text-black hover:text-gray-600"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Navbar links -->
+          <div class="p-4">
+            <ul class="ml-[8%] flex flex-col gap-8">
+              <li
+                class="hover:scale-125 transition-all ease-in-out duration-300"
+              >
+                <a href="#home" class=""><i class="fa fa-home mr-4"></i>Home</a>
+              </li>
+              <li
+                class="hover:scale-125 transition-all ease-in-out duration-300"
+              >
+                <a href="#about" class=""
+                  ><i class="fa fa-user mr-4"></i> About</a
+                >
+              </li>
+              <li
+                class="hover:scale-125 transition-all ease-in-out duration-300"
+              >
+                <a href="#contact" class=""
+                  ><i class="fa fa-phone mr-4"></i>Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content -->
+    <main class="relative left-[16%] w-[84%] h-screen">
+      <section id="home" class="flex justify-center h-screen overflow-hidden">
+        <img
+          src="bg.jpg"
+          alt=""
+          class="w-full h-auto object-cover object-center"
+        />
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
+          <div class="relative w-full flex flex-col items-center gap-2">
+            <h1 class="text-white text-5xl font-bold">內心凋零的小男孩</h1>
+            <p class="text-white text-2xl">我有一隻小毛驢，我從來也不騎</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- The place you can add your code, with content and your style -->
+      <section id="about" class="mt-4 mx-10">
+        <h1>About</h1>
+      </section>
+
+      <section id="contact" class="mt-4 mx-10">
+        <h1>Contact</h1>
+      </section>
+    </main>
+  </body>
+</html>
