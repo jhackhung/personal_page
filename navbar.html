@@ -10,76 +10,59 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
-  <body class="overflow-x-hidden">
-    <header>
-      <!-- Navbar -->
-      <nav class="fixed top-0 left-0 h-full w-[16%] p-5 bg-gray-200 shadow-lg">
-        <div class="relative flex flex-col gap-10">
-          <!-- Photo, name,  and social media -->
-          <div class="mt-8 w-full flex flex-col gap-4 items-center">
-            <img src="./photo.jpg" alt="" class="rounded-full w-20 h-auto" />
-            <h2 class="font-bold text-xl">內心凋零的小男孩</h2>
-            <ul class="flex flex-row gap-4">
-              <li>
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  class="text-black hover:text-gray-600"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  class="text-black hover:text-gray-600"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.github.com/"
-                  class="text-black hover:text-gray-600"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- Navbar links -->
-          <div class="p-4">
-            <ul class="ml-[8%] flex flex-col gap-8">
-              <li
-                class="hover:scale-125 transition-all ease-in-out duration-300"
+  <body>
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-[16%] h-full p-5 bg-gray-300">
+      <div class="relative flex flex-col gap-10">
+        <section class="mt-10 w-full flex flex-col gap-4 items-center">
+          <img
+            src="photo.jpg"
+            alt="內心凋零的小男孩大頭貼帥照"
+            class="w-20 h-auto rounded-full"
+          />
+          <h2 class="font-bold text-xl">內心凋零的小男孩</h2>
+          <ul class="flex flex-row gap-4">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100017724965574">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/abawang__/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/frank931023">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="p-4">
+          <ul class="ml-[8%] flex flex-col gap-8">
+            <li>
+              <a href="#home"><i class="fa-solid fa-home mr-4"></i> Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="fa-solid fa-user mr-4"></i> About</a>
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-solid fa-phone mr-4"></i> Contact</a
               >
-                <a href="#home" class=""><i class="fa fa-home mr-4"></i>Home</a>
-              </li>
-              <li
-                class="hover:scale-125 transition-all ease-in-out duration-300"
-              >
-                <a href="#about" class=""
-                  ><i class="fa fa-user mr-4"></i> About</a
-                >
-              </li>
-              <li
-                class="hover:scale-125 transition-all ease-in-out duration-300"
-              >
-                <a href="#contact" class=""
-                  ><i class="fa fa-phone mr-4"></i>Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+
     <!-- Main Content -->
     <main class="relative left-[16%] w-[84%] h-screen">
-      <section id="home" class="flex justify-center h-screen overflow-hidden">
+      <section id="home" class="flex justify-center h-screen">
         <img
           src="bg.jpg"
-          alt=""
+          alt="背景圖片"
           class="w-full h-auto object-cover object-center"
         />
         <div
@@ -93,12 +76,112 @@
       </section>
 
       <!-- The place you can add your code, with content and your style -->
-      <section id="about" class="mt-4 mx-10">
+      <!-- <section id="about" class="mt-4 mx-10">
         <h1>About</h1>
       </section>
 
       <section id="contact" class="mt-4 mx-10">
         <h1>Contact</h1>
+      </section> -->
+      <section id="about" class="container mt-4 mx-10">
+        <h2 class="text-2xl font-bold mb-5">About</h2>
+
+        <p class="mb-5 text-md ml-20">
+          我是一個<strong>內心凋零的</strong>小男孩，喜歡寫程式，喜歡寫程式，喜歡寫程式，重要的事情說三次。<br />
+          我也喜歡學習新技術，並且熱衷於分享我的知識。
+        </p>
+
+        <div class="w-full flex flex-row justify-evenly">
+          <table class="w-1/4 bg-white shadow-md rounded-lg overflow-hidden">
+            <thead class="bg-gray-200">
+              <tr>
+                <th class="py-2 px-4">項目</th>
+                <th class="py-2 px-4">內容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="px-4 border text-center">年齡</td>
+                <td class="px-4 border text-center">20</td>
+              </tr>
+              <tr>
+                <td class="px-4 border text-center">經歷</td>
+                <td class="px-4 border text-center">GDSC member</td>
+              </tr>
+              <tr>
+                <td class="px-4 border text-center">愛好</td>
+                <td class="px-4 border text-center">閱讀, 旅行, 攝影</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/mwSq9dhpn8Y?si=R1SFtiNWfjh6Bo3M"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="contact" class="mt-4 mx-10">
+        <h2 class="text-2xl font-bold mb-5">Contact</h2>
+        <div class="flex flex-row justify-center items-center mb-4">
+          <div class="w-1/2 bg-white shadow-md rounded-lg p-6 mr-5">
+            <h2 class="text-xl font-bold mb-4">聯絡我</h2>
+            <p class="text-gray-700 text-sm">
+              如果你有任何問題，歡迎與我聯絡，我會盡快回覆你的訊息。
+            </p>
+            <hr class="my-4" />
+            <p class="text-gray-700 text-sm">
+              你也可以透過以下方式與我聯絡：
+            </p>
+            <ul class="list-disc list-inside text-gray-700 text-sm">
+              <li>
+                電子郵件：
+                <a href="mailto:example@gmail.com" class="text-blue-500"
+                  >example@gmail.com</a
+                >
+              </li>
+              <li>電話：+123456789</li>
+              <li>地址：1234 Example St, City, Country</li>
+            </ul>
+            <form class="mt-4 flex flex-col space-y-2 max-w-md mx-auto">
+              <input
+                type="text"
+                placeholder="姓名"
+                class="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-300"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-300"
+              />
+              <textarea
+                placeholder="訊息"
+                class="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-300 h-32 resize-none"
+              ></textarea>
+              <a
+                href="#"
+                class="bg-cyan-600 text-black shadow-lg rounded-xl w-full h-auto py-3 flex items-center justify-center text-sm font-semibold transition-transform transform hover:scale-105 hover:shadow-2xl"
+                >傳送</a
+              >
+            </form>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.3149786027952!2d121.44359017371691!3d24.989410940088653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346802cab728d5a5%3A0xc0b48142db9cdbf1!2z5LuB56Wl5rG96LuK6amX6LuK5bug!5e0!3m2!1szh-TW!2stw!4v1727019316222!5m2!1szh-TW!2stw"
+            width="580"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
   </body>

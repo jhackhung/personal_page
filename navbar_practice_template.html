@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人頁面</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="fixed top-0 left-0 w-[16%] h-full p-5 bg-gray-300">
+      <div class="relative flex flex-col gap-10">
+        <section class="mt-10 w-full flex flex-col gap-4 items-center">
+          <img
+            src="photo.jpg"
+            alt="內心凋零的小男孩大頭貼帥照"
+            class="w-20 h-auto rounded-full"
+          />
+          <h2 class="font-bold text-xl">內心凋零的小男孩</h2>
+          <ul class="flex flex-row gap-4">
+            <li>
+              <a href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.github.com">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="p-4">
+          <ul class="ml-[8%] flex flex-col gap-8">
+            <li>
+              <a href="#home"><i class="fa-solid fa-home mr-4"></i> Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="fa-solid fa-user mr-4"></i> About</a>
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-solid fa-phone mr-4"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+    <main class="relative left-[16%] w-[84%] h-screen">
+      <section id="home" class="flex justify-center h-screen">
+        <img
+          src="./bg.jpg"
+          alt="background pic"
+          class="w-full h-auto object-cover object-center"
+        />
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
+          <div class="relative w-full flex flex-col items-center gap-2">
+            <h1 class="text-5xl font-bold text-white">內心凋零的小男孩</h1>
+            <p class="text-2xl text-white">我有一隻小毛驢，我從來也不騎</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- The place you can add your code, with content and your style -->
+      <section id="about" class="mt-4 mx-10">
+        <h1>About</h1>
+      </section>
+
+      <section id="contact" class="mt-4 mx-10">
+        <h1>Contact</h1>
+      </section>
+    </main>
+  </body>
+</html>
