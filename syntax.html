@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Syntax</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Color -->
+    <!-- Background color -->
+    <h1 class="bg-blue-500">你好</h1>
+    <h1 class="bg-blue-200">你好</h1>
+    <h1 class="bg-yellow-500">你好</h1>
+    <!-- Text Color -->
+    <h2 class="text-red-500">你好</h2>
+    <!-- Both -->
+    <h3 class="bg-green-800 text-white">你好</h3>
+    <!-- Customize (hex color) -->
+    <h4 class="bg-[#1e0a47] text-[#a5c6ea]">你好</h4>
+    <!-- hex color => #rrggbb -->
+     
+    <!-- Font -->
+    <!-- Size -->
+    <h1 class="text-5xl">你好</h1>
+    <h4 class="text-xs">你好</h4>
+    <!-- Weight -->
+    <h1 class="text-5xl font-bold">你好</h1>
+    <!-- Customize -->
+    <p class="text-[24px]">
+        自定義
+        <p class="text-[50%]">自定義50%</p>
+        <p class="text-[12px]">自定義50%</p>
+    </p>
+    <!-- line height -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos deleniti fugiat eveniet iure, iusto eligendi consequuntur totam ea delectus voluptates qui laudantium praesentium voluptatum alias.</p>
+    <p class="leading-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos deleniti fugiat eveniet iure, iusto eligendi consequuntur totam ea delectus voluptates qui laudantium praesentium voluptatum alias.</p>
+
+    <!-- Border -->
+    <h1 class="border border-black">你好</h1>
+    <!-- Weight, Color -->
+    <h1 class="border-8 border-red-500">你好</h1>
+    <!-- Customize -->
+    <h1 class="border-[10px] border-[#00ffff]">你好</h1>
+    <!-- Different Side Weight -->
+    <h1 class="border-x-2 border-y-8 border-green-500">你好</h1>
+    <!-- Border radius -->
+    <h1 class="border-2 border-black rounded-lg">你好</h1>
+    <!-- Different side border radius -->
+    <h1 class="border-2 border-black rounded-r-full rounded-l-none">你好</h1>
+    <!-- <h1 class="border-x-2 border-y-8 border-green-500 rounded-3xl">你好</h1> -->
+
+    <!-- Box Width and Height -->
+    <div class="w-56 h-56 bg-green-700"></div>
+
+    <!-- Padding -->
+    <div class="p-8 border-2 border-black">
+        <h1>你好</h1>
+    </div>
+
+    <!-- Margin -->
+    <div class="m-8 p-8 border border-black">
+        <h1>你好</h1>
+    </div>
+
+    <!-- Position: staic relative absolute fixed -->
+    <div class="">Static</div>
+
+    <div class="relative top-2 left-4  bg-gray-400 p-6">
+        <h1 class="text-xl">標題</h1>
+        <div class="absolute top-4 right-4 bg-blue-500 p-2">
+            絕對定位的子元素
+        </div>
+        <h1 class="relative text-xl">標題</h1>
+        
+    </div>
+
+    <!-- <div class="fixed top-0 left-0 w-20 h-20 bg-pink-600 "></div> -->
+
+    <!-- Flexbox -->
+
+    <div class="mt-8 flex flex-row">
+        <div class="w-20 h-20 bg-orange-300"></div>
+        <div class="w-20 h-20 bg-orange-400"></div>
+        <div class="w-20 h-20 bg-orange-500"></div>
+        <div class="w-20 h-20 bg-orange-600"></div>
+    </div>
+
+    <!-- justify-content align-items -->
+    <div class="mt-8 w-full bg-gray-300 h-40 flex flex-row justify-center items-center gap-4">
+        <div class="w-20 h-20 bg-orange-300"></div>
+        <div class="w-20 h-20 bg-orange-400"></div>
+        <div class="w-20 h-20 bg-orange-500"></div>
+        <div class="w-20 h-20 bg-orange-600"></div>
+    </div>
+    <!-- flex-col -->
+    <div class="mt-8 w-full h-[500px] bg-gray-300 flex flex-col justify-center items-center gap-4">
+        <div class="w-20 h-20 bg-orange-300"></div>
+        <div class="w-20 h-20 bg-orange-400"></div>
+        <div class="w-20 h-20 bg-orange-500"></div>
+        <div class="w-20 h-20 bg-orange-600"></div>
+    </div>
+
+    <!-- Box Sizing -->
+    <br>
+    <div class="relative left-[100px]">
+        <div class="box-content w-[150px] h-[100px] p-4 bg-gray-200">
+            我是 content-box
+        </div>
+        <div class="box-border w-[150px] h-[100px] p-4 bg-gray-400">
+            我是 border-box
+        </div>
+    </div>
+    <br>
+</body>
+</html>
